@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+body {
+    margin: 0;
+    color: black;
+    font-family: 'Muli', sans-serif;
+}
+
+.navigation {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.navigation h1 {
+    color: blue;
+    font-family: 'Quicksand', sans-serif;
+    margin-right: auto;
+}
+
+.navigation a {
+    color: red;
+    text-decoration: none;
+    margin-left: 16px;
+    padding: 6px;
+    transition: color 0.3s ease;
+}
+
+/* Temel stillendirmeler */
+
+
+
+
+.navigation a:hover {
+    color: brown;
+}
+
+.home {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Ek olarak, .navigation .links kuralınızı kaldırabilirsiniz, çünkü kullanılmıyor gibi görünüyor. */
+/* Temel stillendirmeler */
+.blogs-preview {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    /* İçeriği dikey düzende hizalar */
+    align-items: flex-start;
+    transition: background-color 0.3s;
+    position: relative;
+    /* İçeriği relative pozisyonlu yapar */
+}
+
+/* Başlık stillendirmesi */
+.blogs-preview h2 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Paragraf stillendirmesi */
+.blogs-preview p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Buton stillendirmesi */
+.blogs-preview button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    position: absolute;
+    /* Mutlak pozisyonlu hale getirir */
+    bottom: 20px;
+    /* Alt kenara hizalar */
+    right: 0;
+    /* Sağ kenara hizalar */
+    margin: 10px;
+    /* Kenarlardan boşluk ekler */
+}
+
+.blogs-preview button:hover {
+    background-color: #c0392b;
+}
