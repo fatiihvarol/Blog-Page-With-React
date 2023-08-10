@@ -11,7 +11,6 @@ const BlogList = (props) => {
                 blogs.map((blog) => (
                     <div className="blogs-preview" key={blog.id}>
                         <h2>{blog.title}</h2>
-                        <p>{blog.body}</p>
                         <button onClick={() => props.deleteHandler(blog.id)}>Delete</button>
                     </div>
                 ))}

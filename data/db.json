@@ -1,0 +1,22 @@
+{
+    "blogs": [
+        {
+            "id": "1",
+            "title": "Haber 1",
+            "body": "Gün batımının altın rengi tonları, ufuk çizgisinde buluşan denizle dans ederken manzara adeta büyülü bir tabloya dönüşüyordu. Rüzgarın hafif esintisi saçlarımda oynarken deniz kokusu tüm duyularımı sarıyordu. Kumlar ayaklarıma masaj yapıyor gibiydi. Uzaklarda martıların çığlıkları duyuluyordu. Huzur veren bu anın tadını çıkarırken güneşin son ışıklarıyla deniz yüzeyi parıldıyordu. Doğanın bu kusursuz uyumuna tanıklık etmek insanı anlamsal bir dinginliğe kavuşturuyordu. Anın tadını çıkarırken zamanın durduğunu hissettim, her şey sadece bu anın içinde var gibi.",
+            "yazar": "Fatih1"
+        },
+        {
+            "id": "2",
+            "title": "Haber 2",
+            "body": "Şehrin telaşı ve gürültüsü arasında, parkın yeşil çimenlerinde sessiz bir an buldum. Kitabımı alıp banka oturduğumda çevremdeki ağaçlar ve kuşlar beni sarmaladı. Sayfalar arasında kaybolurken, düşüncelerim de özgürce uçuştu. Ruhumun derinliklerindeki huzur ve sessizlik burada bulunuyordu. Kuşların melodisi ve hafif esinti beni başka bir dünyaya taşıdı. Şehrin karmaşasından uzaklaşmanın tadını çıkarırken, içsel dinginliğe kavuşmanın ne kadar önemli olduğunu bir kez daha anladım.",
+            "yazar": "Fatih2"
+        },
+        {
+            "id": "3",
+            "title": "Haber 3",
+            "body": "Haber 3 içerik",
+            "yazar": "Fatih3"
+        }
+    ]
+}

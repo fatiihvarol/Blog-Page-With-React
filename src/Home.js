@@ -4,12 +4,7 @@ const Home = () => {
 
     const [name, setName] = useState('fatih')
 
-    const [blogs, setBlog] = useState([
-        { id: "1", "title": "Haber 1", "body": "Haber 1 içerik", "yazar": "Fatih1" },
-        { id: "2", "title": "Haber 2", "body": "Haber 2 içerik", "yazar": "Fatih2" },
-        { id: "3", "title": "Haber 3", "body": "Haber 3 içerik", "yazar": "Fatih3" }
-
-    ]);
+    const [blogs, setBlog] = useState(null);
 
     const deleteHandler = (id) => {
         const newBlogs = blogs.filter(blog => blog.id !== id)
@@ -20,13 +15,19 @@ const Home = () => {
         setBlog(newBlogs);
     }
     useEffect(() => {
-        console.log("use effect ran")
-    }, [name])
+        fetch('http://localhost:8000/blogs')
+            .then(res => {
+                return res.json()
+            })
+            .then(data => {
+                console.log(data)
+                setBlog(data)
+            })
+    }, [])
     return (
         <div className="home">
-            <BlogList blogs={blogs} title={"İçerik1"} deleteHandler={deleteHandler} searchHandler={searchHandler} />
-            <button onClick={() => setName('ceren')}>Change Name</button>
-            <p>{name}</p>
+            {blogs && <BlogList blogs={blogs} title={"İçerik1"} deleteHandler={deleteHandler} searchHandler={searchHandler} />}
+
         </div>
     );
 
